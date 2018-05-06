@@ -1,5 +1,4 @@
 #include <algorithm>
-#include <vector>
 #include <memory>
 #include "allocator.h"
 #include "smallfunctions.h"

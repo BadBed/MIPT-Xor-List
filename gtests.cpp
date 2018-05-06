@@ -1,5 +1,6 @@
 #include <gtest/gtest.h>
 #include <vector>
+#include <list>
 #include "allocator.h"
 #include "checker.h"
 #include "list.h"
@@ -291,7 +292,7 @@ TEST(iterator, equial) {
 }
 
 TEST(auto_tests, check_is_equial) {
-    int size = 20;
+    size_t size = 20;
     int count = 10000;
     for (int i = 0; i < count; ++i) {
         bool ok = check_is_equial<int,

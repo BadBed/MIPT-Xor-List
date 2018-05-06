@@ -1,8 +1,8 @@
 #pragma once
 #include <memory>
-#include <list>
 #include <cstddef>
 #include "smallfunctions.h"
+#include "list.h"
 
 class RealAllocator {
 public:
@@ -19,7 +19,7 @@ private:
 	size_t _current_full_size;
 	size_t _current_free_size;
 	void* _current_ptr;
-	std::list<void*> _pages;
+	XorList<void*> _pages;
 };
 
 template <typename T>
